@@ -68,7 +68,7 @@ def handle_client(conn, addr):
             else:
                 response = "Msg received"
             
-            #
+            conn.send(response.encode(FORMAT))
             
 
     conn.close()
